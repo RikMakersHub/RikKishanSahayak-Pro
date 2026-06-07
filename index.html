@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RikKishanSahayak | Real-Time Market Arbitrage</title>
+    
+    <!-- External Raw CSS Engine Integration -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation Grid -->
+    <header>
+        <div class="header-title-set">
+            <h1>🌾 RikKishanSahayak-Pro</h1>
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px;">
+            <!-- Ecosystem Cross-Platform Link Redirection -->
+            <a href="https://github.io" class="agtech-nav-btn">
+                🌱 Go to RikAgriculture-Pro
+            </a>
+            <div class="badge">RIKMAKERSHUB AGTECH CORE</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- User Interaction Terminal Panel -->
+        <section class="sidebar">
+            <h2>🎛️ Engine Configuration</h2>
+            
+            <div class="input-group">
+                <label>Select Boundary State</label>
+                <select id="stateSelect" onchange="updateMandiOptions()">
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Assam">Assam</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Select Commodity</label>
+                <select id="cropSelect">
+                    <option value="Potato">Potato (आलू)</option>
+                    <option value="Onion">Onion (प्याज)</option>
+                    <option value="Rice">Rice / Paddy (धान)</option>
+                    <option value="Wheat">Wheat (गेहूं)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Total Harvest Load (Quintals)</label>
+                <input type="number" id="produceWeight" value="15" min="1">
+            </div>
+
+            <div class="input-group">
+                <label>Local Diesel Price (₹ / L)</label>
+                <input type="number" id="dieselPrice" value="92.50" step="0.1">
+            </div>
+
+            <button onclick="runArbitrageEngine()" class="submit-btn">
+                Execute Arbitrage Run
+            </button>
+        </section>
+
+        <!-- Live Visualization Module Streams -->
+        <section class="dashboard-panel">
+            <div class="panel-header">
+                <h2>📊 Dynamic Routing Ledger</h2>
+                <span id="currentStateBadge" class="state-badge">West Bengal</span>
+            </div>
+
+            <!-- Top Optimization Yield Target Module -->
+            <div class="winner-card">
+                <div id="winnerData">
+                    <!-- Calculated dynamically via engine.js -->
+                </div>
+            </div>
+
+            <!-- Alternating Secondary Array Module Spreads -->
+            <div>
+                <h3 class="alternatives-heading">Alternative Mandi Spreads</h3>
+                <div id="alternativesList">
+                    <!-- Calculated dynamically via engine.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Core Computation Layer script execution -->
+    <script src="engine.js"></script>
+</body>
+</html>
+
