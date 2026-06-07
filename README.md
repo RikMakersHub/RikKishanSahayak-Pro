@@ -55,7 +55,7 @@ Because this codebase runs completely on vanilla web tech, it requires zero inst
 - [ ] **Hardware Synchronization:** Link telemetry data from field-deployed **Pulse Sentinel** solar sensor nodes directly into the web matrix dashboard.
 
 
-** come check it out in:**
+** come check it out in:** [RikKishanSahayak-Pro] (http://rikmakershub.github.io/RikKishanSahayak-Pro/)
 ----
 ## 📜 License
 
